@@ -1,1 +1,1 @@
-!! Connected whith [Frontend Angular](https://github.com/Gabrinev/FrontendAngular)
+!! Connected with [Frontend Angular](https://github.com/Gabrinev/FrontendAngular)!!
