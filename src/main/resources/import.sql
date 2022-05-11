@@ -1,0 +1,10 @@
+insert into clientes (nombre, apellido, email, create_at) values ('Jaime', 'Blackaller', 'jblackaller0@cisco.com', '2022-05-04');
+insert into clientes (nombre, apellido, email, create_at) values ('Stephanie', 'Jakobssen', 'sjakobssen1@bizjournals.com', '2021-08-27');
+insert into clientes (nombre, apellido, email, create_at) values ('Heda', 'Maharey', 'hmaharey2@fema.gov', '2021-12-11');
+insert into clientes (nombre, apellido, email, create_at) values ('Trumaine', 'Dybell', 'tdybell3@yellowpages.com', '2021-07-14');
+insert into clientes (nombre, apellido, email, create_at) values ('Leo', 'Laughren', 'llaughren4@1und1.de', '2022-04-15');
+insert into clientes (nombre, apellido, email, create_at) values ('Ailyn', 'Corkel', 'acorkel5@webs.com', '2021-07-31');
+insert into clientes (nombre, apellido, email, create_at) values ('Yehudit', 'Regis', 'yregis6@va.gov', '2021-07-04');
+insert into clientes (nombre, apellido, email, create_at) values ('Jeramie', 'Pallister', 'jpallister7@livejournal.com', '2022-01-12');
+insert into clientes (nombre, apellido, email, create_at) values ('Nils', 'Wile', 'nwile8@senate.gov', '2021-12-10');
+insert into clientes (nombre, apellido, email, create_at) values ('Tana', 'Hassin', 'thassin9@meetup.com', '2021-05-10');
