@@ -1,9 +1,9 @@
 package com.mytic.springboot.backend.apirest.models.entity;
 
-import javax.annotation.PreDestroy;
 import javax.persistence.*;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.io.Serializable;
 import java.util.Date;
@@ -21,20 +21,21 @@ public class Cliente implements Serializable {
     @Size(min = 4, max= 12)
     @Column(nullable = false)
     private String nombre;
+
     @NotEmpty
     private String apellido;
+
     @NotEmpty
     @Email
     @Column(nullable = false, unique = true)
     private String email;
+
+    @NotNull
     @Column(name ="create_at")
     @Temporal(TemporalType.DATE)
     private Date createAt;
 
-    @PrePersist
-    public void prePersist(){
-        createAt = new Date();
-    }
+    private String foto;
 
     public long getId() {
         return id;
@@ -54,6 +55,14 @@ public class Cliente implements Serializable {
 
     public String getApellido() {
         return apellido;
+    }
+
+    public String getFoto() {
+        return foto;
+    }
+
+    public void setFoto(String foto) {
+        this.foto = foto;
     }
 
     public void setApellido(String apellido) {
