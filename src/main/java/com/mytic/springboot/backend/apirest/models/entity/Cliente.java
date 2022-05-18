@@ -1,5 +1,7 @@
 package com.mytic.springboot.backend.apirest.models.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import javax.persistence.*;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
@@ -36,6 +38,12 @@ public class Cliente implements Serializable {
     private Date createAt;
 
     private String foto;
+
+    @NotNull(message = "la región no puede estar vacía")
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "region_id")
+    @JsonIgnoreProperties({"hibernateLazyInitializer","handler"})
+    private Region region;
 
     public long getId() {
         return id;
@@ -83,6 +91,14 @@ public class Cliente implements Serializable {
 
     public void setCreateAt(Date createAt) {
         this.createAt = createAt;
+    }
+
+    public Region getRegion() {
+        return region;
+    }
+
+    public void setRegion(Region region) {
+        this.region = region;
     }
 
     private static final long serialVersionUID = 1L;
